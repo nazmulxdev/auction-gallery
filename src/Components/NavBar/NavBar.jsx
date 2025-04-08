@@ -1,7 +1,7 @@
 import React from "react";
 const NavBar = () => {
   return (
-    <div>
+    <div className="poppins">
       <div className="navbar bg-base-100 shadow-sm px-36 py-6">
         <div className="navbar-start">
           <div className="dropdown">
@@ -88,7 +88,7 @@ const NavBar = () => {
                     className=" w-4 h-4 indicator-item -top-2.5 rounded-full bg-[#0E2954] text-white text-center flex
                    justify-center items-center"
                   >
-                    8
+                    9
                   </span>
                 </div>
               </div>
