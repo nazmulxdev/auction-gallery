@@ -3,6 +3,8 @@ import Swal from "sweetalert2";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import NavBar from "./Components/NavBar/NavBar";
 import HeroSection from "./Components/HeroSection/HeroSection";
+import MainSection from "./Components/MainSection/MainSection";
+import FooterSection from "./Components/Footer/FooterSection";
 
 // custom sweet alert
 // Swal.fire({
@@ -23,6 +25,8 @@ function App() {
     <>
       <NavBar></NavBar>
       <HeroSection></HeroSection>
+      <MainSection></MainSection>
+      <FooterSection></FooterSection>
     </>
   );
 }
