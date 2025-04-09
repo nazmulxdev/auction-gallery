@@ -16,6 +16,8 @@ import { Bounce } from "react-toastify";
 function App() {
   const [allProducts, setAllProduct] = useState([]);
 
+  const [favoriteItem, setFavoriteItem] = useState([]);
+
   useEffect(() => {
     const auctionProduct = async () => {
       const res = await fetch("auctions.json");
@@ -26,6 +28,9 @@ function App() {
     auctionProduct();
   }, []);
 
+  const handelFavoriteItems = (item) => {
+    setFavoriteItem([...favoriteItem, item]);
+  };
   const buttonToast = () => {
     toast("🦄 Item Added to your Favorite Lists", {
       position: "top-right",
@@ -46,6 +51,8 @@ function App() {
       <MainSection
         allProducts={allProducts}
         buttonToast={buttonToast}
+        handelFavoriteItems={handelFavoriteItems}
+        favoriteItem={favoriteItem}
       ></MainSection>
       <FooterSection></FooterSection>
       <ToastContainer></ToastContainer>

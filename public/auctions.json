@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Camera",
+    "title": "Professional DSLR Camera",
     "description": "High-resolution DSLR camera perfect for photography enthusiasts.",
     "currentBidPrice": 250.0,
     "timeLeft": "3h 20m",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "title": "Guitar",
+    "title": "Classic Acoustic Guitar",
     "description": "Acoustic guitar with a rich, warm sound and smooth finish.",
     "currentBidPrice": 120.0,
     "timeLeft": "5h 10m",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "title": "Laptop",
+    "title": "Powerful Gaming & Work Laptop ",
     "description": "Powerful laptop with 16GB RAM and 512GB SSD for multitasking.",
     "currentBidPrice": 650.0,
     "timeLeft": "1d 4h",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "title": "Watch",
+    "title": "Elegant Leather Strap Watch",
     "description": "Luxury wristwatch with leather strap and elegant design.",
     "currentBidPrice": 180.0,
     "timeLeft": "2h 45m",
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "title": "Chair",
+    "title": "Ergonomic Office Chair ",
     "description": "Ergonomic office chair with lumbar support and adjustable height.",
     "currentBidPrice": 85.0,
     "timeLeft": "6h 15m",
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "title": "Novel Book",
+    "title": "Bestselling Fiction Novel",
     "description": "Bestselling mystery novel with thrilling plot twists.",
     "currentBidPrice": 15.0,
     "timeLeft": "4h 30m",
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "title": "Showpiece",
+    "title": "Stylish Decorative Shoe Piece",
     "description": "Decorative showpiece for home or office display.",
     "currentBidPrice": 35.0,
     "timeLeft": "7h 50m",

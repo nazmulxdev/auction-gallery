@@ -1,7 +1,7 @@
 import React from "react";
 import ProductTable from "../ProductTable/ProductTable";
 
-const MainSection = ({ allProducts, buttonToast }) => {
+const MainSection = ({ allProducts, buttonToast, handelFavoriteItems,favoriteItem }) => {
   return (
     <div className="sora bg-[#EBF0F5] px-36 py-36">
       <h1 className="mb-5 font-medium text-[#0E2954] text-3xl">
@@ -13,6 +13,8 @@ const MainSection = ({ allProducts, buttonToast }) => {
       <ProductTable
         allProducts={allProducts}
         buttonToast={buttonToast}
+        handelFavoriteItems={handelFavoriteItems}
+        favoriteItem={favoriteItem}
       ></ProductTable>
     </div>
   );
