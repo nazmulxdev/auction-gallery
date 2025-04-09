@@ -4,14 +4,9 @@ import NavBar from "./Components/NavBar/NavBar";
 import HeroSection from "./Components/HeroSection/HeroSection";
 import MainSection from "./Components/MainSection/MainSection";
 import FooterSection from "./Components/Footer/FooterSection";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify/unstyled";
 import { Bounce } from "react-toastify";
-
-// heart icon
-{
-  /* <FaHeart className="text-red-500"/> */
-}
 
 function App() {
   const [allProducts, setAllProduct] = useState([]);
@@ -44,6 +39,13 @@ function App() {
       transition: Bounce,
     });
   };
+
+  const handelFavoriteList = (id) => {
+    const deletedItems = favoriteItem.filter(
+      (finalItems) => finalItems.id !== id
+    );
+    setFavoriteItem(deletedItems);
+  };
   return (
     <>
       <NavBar></NavBar>
@@ -53,6 +55,7 @@ function App() {
         buttonToast={buttonToast}
         handelFavoriteItems={handelFavoriteItems}
         favoriteItem={favoriteItem}
+        handelFavoriteList={handelFavoriteList}
       ></MainSection>
       <FooterSection></FooterSection>
       <ToastContainer></ToastContainer>

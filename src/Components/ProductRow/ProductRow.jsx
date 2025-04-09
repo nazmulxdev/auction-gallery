@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 
-const ProductRow = ({ product, buttonToast, handelFavoriteItems }) => {
+const ProductRow = ({
+  product,
+  buttonToast,
+  handelFavoriteItems,
+  setBidAmount,
+  bidAmount,
+}) => {
   // console.log(product);
+  const [itemClick, setItemClick] = useState(false);
   return (
     <>
       <tr className="sora">
@@ -18,13 +25,22 @@ const ProductRow = ({ product, buttonToast, handelFavoriteItems }) => {
         <td className="text-left p-8">{product.timeLeft}</td>
         <td className="text-left p-8">
           <button
-            className="cursor-pointer"
             onClick={() => {
               handelFavoriteItems(product);
               buttonToast();
+              setItemClick(true);
+              setBidAmount(bidAmount + product.currentBidPrice);
             }}
+            style={{
+              cursor: itemClick ? "not-allowed" : "pointer",
+            }}
+            disabled={itemClick}
           >
-            <FaHeart className="" />
+            {itemClick ? (
+              <FaHeart className="text-red-500 text-2xl" />
+            ) : (
+              <FaRegHeart className="text-2xl" />
+            )}
           </button>
         </td>
       </tr>
