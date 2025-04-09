@@ -1,8 +1,7 @@
 import React from "react";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 
-const ProductRow = ({ product }) => {
-  console.log(product);
+const ProductRow = ({ product, buttonToast }) => {
   return (
     <>
       <tr className="sora">
@@ -17,7 +16,7 @@ const ProductRow = ({ product }) => {
         <td className="text-left p-8">${product.currentBidPrice}</td>
         <td className="text-left p-8">{product.timeLeft}</td>
         <td className="text-left p-8">
-          <button className="cursor-pointer">
+          <button className="cursor-pointer" onClick={() => buttonToast()}>
             <FaHeart className="" />
           </button>
         </td>

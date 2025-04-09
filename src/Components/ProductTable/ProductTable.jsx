@@ -1,8 +1,7 @@
 import React from "react";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import ProductRow from "../ProductRow/ProductRow";
-const ProductTable = ({ allProducts }) => {
-  console.log(allProducts);
+const ProductTable = ({ allProducts, buttonToast }) => {
   return (
     <div className="grid grid-cols-3 gap-6 items-start">
       <div className="col-span-2 bg-white rounded-2xl">
@@ -17,7 +16,11 @@ const ProductTable = ({ allProducts }) => {
           </thead>
           <tbody className="w-full divide-y divide-gray-300">
             {allProducts.map((product) => (
-              <ProductRow key={product.id} product={product}></ProductRow>
+              <ProductRow
+                key={product.id}
+                product={product}
+                buttonToast={buttonToast}
+              ></ProductRow>
             ))}
           </tbody>
         </table>
