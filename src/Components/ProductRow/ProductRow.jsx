@@ -35,8 +35,8 @@ const ProductRow = ({
         <td className="text-left p-8">
           <button
             onClick={() => {
-              handelFavoriteItems(product);
               buttonToast();
+              handelFavoriteItems(product);
               setBidAmount(bidAmount + product.currentBidPrice);
               // setBidButtonId(product.id);
               setBtnClicked(true);
