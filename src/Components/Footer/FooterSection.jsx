@@ -1,11 +1,11 @@
 import React from "react";
-
+import footerImage from "../../assets/AuctionGallery.png";
 const FooterSection = () => {
   return (
     <div>
       <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10 py-32">
         <nav>
-          <img src="src/assets/AuctionGallery.png" />
+          <img src={footerImage} />
         </nav>
         <nav className="grid grid-flow-col gap-4">
           <a className="link link-hover">Bid.</a>

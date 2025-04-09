@@ -1,4 +1,5 @@
 import React from "react";
+import NavBarImage from "../../assets/AuctionGallery.png";
 const NavBar = () => {
   return (
     <div className="poppins">
@@ -41,7 +42,7 @@ const NavBar = () => {
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">
-            <img src="src/assets/AuctionGallery.png" />
+            <img src={NavBarImage} />
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
