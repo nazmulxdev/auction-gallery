@@ -1,16 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 
-const FavoriteItemRow = ({ favItem, handelFavoriteList, handelBidAmount }) => {
-  const {
-    id,
-    title,
-    description,
-    currentBidPrice,
-    timeLedt,
-    bidsCount,
-    image,
-  } = favItem;
+const FavoriteItemRow = ({
+  favItem,
+  handelFavoriteList,
+  handelBidAmount,
+  handelHeartButton,
+}) => {
+  const { id, title, currentBidPrice, bidsCount, image } = favItem;
+  const [clickedCrossButton, setClickedCrossButton] = useState(false);
   return (
     <>
       <tr>
@@ -25,9 +23,11 @@ const FavoriteItemRow = ({ favItem, handelFavoriteList, handelBidAmount }) => {
           <button
             onClick={() => {
               handelFavoriteList(id);
+              setClickedCrossButton(true);
               handelBidAmount(currentBidPrice);
+              handelHeartButton({ id, clickedCrossButton });
             }}
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-red-500"
           >
             <RxCross2 className="text-2xl" />
           </button>

@@ -46,6 +46,7 @@ function App() {
     );
     setFavoriteItem(deletedItems);
   };
+
   return (
     <>
       <NavBar></NavBar>

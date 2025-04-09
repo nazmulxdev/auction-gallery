@@ -1,4 +1,3 @@
-import React, { use, useState } from "react";
 import FavoriteItemList from "../FavoriteItemList/FavoriteItemList";
 
 const FavoriteItems = ({
@@ -6,17 +5,17 @@ const FavoriteItems = ({
   bidAmount,
   handelFavoriteList,
   handelBidAmount,
+  handelHeartButton
 }) => {
-  // const [totalPrice, setTotalPrice] = useState(0.0);
 
   return (
     <>
       <>
         <FavoriteItemList
           favoriteItem={favoriteItem}
-          // setTotalPrice={setTotalPrice}
           handelFavoriteList={handelFavoriteList}
           handelBidAmount={handelBidAmount}
+          handelHeartButton={handelHeartButton}
         ></FavoriteItemList>
       </>
       <tr>

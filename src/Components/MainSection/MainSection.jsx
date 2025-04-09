@@ -6,7 +6,7 @@ const MainSection = ({
   buttonToast,
   handelFavoriteItems,
   favoriteItem,
-  handelFavoriteList,
+  handelFavoriteList
 }) => {
   return (
     <div className="sora bg-[#EBF0F5] px-36 py-36">
