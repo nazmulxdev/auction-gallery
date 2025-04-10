@@ -1,6 +1,6 @@
 import FavoriteItemRow from "../FavoriteItemRow/FavoriteItemRow";
 
-const FavoriteItemList = ({ favoriteItem,setTotalPrice,handelFavoriteList,handelBidAmount,handelHeartButton }) => {
+const FavoriteItemList = ({ favoriteItem,setTotalPrice,handelFavoriteList,handelBidAmount,handelHeartButton,deletedToast }) => {
   return (
     <>
       <>
@@ -11,6 +11,7 @@ const FavoriteItemList = ({ favoriteItem,setTotalPrice,handelFavoriteList,handel
               favItem={favItem}
               setTotalPrice={setTotalPrice}
               handelFavoriteList={handelFavoriteList}
+              deletedToast={deletedToast}
               handelBidAmount={handelBidAmount}
               handelHeartButton={handelHeartButton}
             ></FavoriteItemRow>

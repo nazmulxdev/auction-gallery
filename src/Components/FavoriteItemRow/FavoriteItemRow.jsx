@@ -3,6 +3,7 @@ import { RxCross2 } from "react-icons/rx";
 
 const FavoriteItemRow = ({
   favItem,
+  deletedToast,
   handelFavoriteList,
   handelBidAmount,
   handelHeartButton,
@@ -27,6 +28,7 @@ const FavoriteItemRow = ({
               handelBidAmount(currentBidPrice);
               favItem.isTrue = false;
               handelHeartButton({ id, clickedCrossButton });
+              deletedToast();
             }}
             className="cursor-pointer hover:text-red-500"
           >

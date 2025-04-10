@@ -4,6 +4,7 @@ import ProductTable from "../ProductTable/ProductTable";
 const MainSection = ({
   allProducts,
   buttonToast,
+  deletedToast,
   handelFavoriteItems,
   favoriteItem,
   handelFavoriteList
@@ -19,6 +20,7 @@ const MainSection = ({
       <ProductTable
         allProducts={allProducts}
         buttonToast={buttonToast}
+        deletedToast={deletedToast}
         handelFavoriteItems={handelFavoriteItems}
         favoriteItem={favoriteItem}
         handelFavoriteList={handelFavoriteList}

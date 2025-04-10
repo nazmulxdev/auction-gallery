@@ -5,6 +5,7 @@ import FavoriteItems from "../FavoriteItemsTable/FavoriteItems";
 const ProductTable = ({
   allProducts,
   buttonToast,
+  deletedToast,
   handelFavoriteItems,
   favoriteItem,
   handelFavoriteList,
@@ -57,6 +58,7 @@ const ProductTable = ({
             <FavoriteItems
               favoriteItem={favoriteItem}
               bidAmount={bidAmount}
+              deletedToast={deletedToast}
               handelFavoriteList={handelFavoriteList}
               handelBidAmount={handelBidAmount}
               handelHeartButton={handelHeartButton}

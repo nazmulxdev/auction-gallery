@@ -3,6 +3,7 @@ import FavoriteItemList from "../FavoriteItemList/FavoriteItemList";
 const FavoriteItems = ({
   favoriteItem,
   bidAmount,
+  deletedToast,
   handelFavoriteList,
   handelBidAmount,
   handelHeartButton
@@ -14,6 +15,7 @@ const FavoriteItems = ({
         <FavoriteItemList
           favoriteItem={favoriteItem}
           handelFavoriteList={handelFavoriteList}
+          deletedToast={deletedToast}
           handelBidAmount={handelBidAmount}
           handelHeartButton={handelHeartButton}
         ></FavoriteItemList>

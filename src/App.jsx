@@ -40,6 +40,20 @@ function App() {
     });
   };
 
+  const deletedToast = () => {
+    toast.warn("🦄 Item Removed From Favorite Lists!", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
+  };
+
   const handelFavoriteList = (id) => {
     const deletedItems = favoriteItem.filter(
       (finalItems) => finalItems.id !== id
@@ -57,6 +71,7 @@ function App() {
         handelFavoriteItems={handelFavoriteItems}
         favoriteItem={favoriteItem}
         handelFavoriteList={handelFavoriteList}
+        deletedToast={deletedToast}
       ></MainSection>
       <FooterSection></FooterSection>
       <ToastContainer></ToastContainer>
