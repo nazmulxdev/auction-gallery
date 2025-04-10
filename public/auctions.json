@@ -6,7 +6,8 @@
     "currentBidPrice": 250.0,
     "timeLeft": "3h 20m",
     "bidsCount": 12,
-    "image": "https://i.ibb.co.com/LzcyQyD7/Bid1-min.png"
+    "image": "https://i.ibb.co.com/LzcyQyD7/Bid1-min.png",
+    "isTrue": false
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "currentBidPrice": 120.0,
     "timeLeft": "5h 10m",
     "bidsCount": 7,
-    "image": "https://i.ibb.co.com/21g9Nvgq/Bid2-min.png"
+    "image": "https://i.ibb.co.com/21g9Nvgq/Bid2-min.png",
+    "isTrue": false
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "currentBidPrice": 650.0,
     "timeLeft": "1d 4h",
     "bidsCount": 25,
-    "image": "https://i.ibb.co.com/YFrwwT55/Bid3-min.png"
+    "image": "https://i.ibb.co.com/YFrwwT55/Bid3-min.png",
+    "isTrue": false
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "currentBidPrice": 180.0,
     "timeLeft": "2h 45m",
     "bidsCount": 10,
-    "image": "https://i.ibb.co.com/F4Sf5RBb/Bid4-min.png"
+    "image": "https://i.ibb.co.com/F4Sf5RBb/Bid4-min.png",
+    "isTrue": false
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "currentBidPrice": 85.0,
     "timeLeft": "6h 15m",
     "bidsCount": 6,
-    "image": "https://i.ibb.co.com/mCZWh5qq/Bid5-min.png"
+    "image": "https://i.ibb.co.com/mCZWh5qq/Bid5-min.png",
+    "isTrue": false
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "currentBidPrice": 15.0,
     "timeLeft": "4h 30m",
     "bidsCount": 3,
-    "image": "https://i.ibb.co.com/CsSWGmFJ/Bid6-min.png"
+    "image": "https://i.ibb.co.com/CsSWGmFJ/Bid6-min.png",
+    "isTrue": false
   },
   {
     "id": 7,
@@ -60,6 +66,7 @@
     "currentBidPrice": 35.0,
     "timeLeft": "7h 50m",
     "bidsCount": 4,
-    "image": "https://i.ibb.co.com/YBj8NgDW/Bid7-min.png"
+    "image": "https://i.ibb.co.com/YBj8NgDW/Bid7-min.png",
+    "isTrue": false
   }
 ]

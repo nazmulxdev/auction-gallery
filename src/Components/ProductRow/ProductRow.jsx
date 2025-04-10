@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import { ImInsertTemplate } from "react-icons/im";
 
@@ -8,17 +8,7 @@ const ProductRow = ({
   handelFavoriteItems,
   setBidAmount,
   bidAmount,
-  // deletedItemId,
-  // deletedItem,
 }) => {
-  const [btnClicked, setBtnClicked] = useState(false);
-
-  // const [bidButtonId, setBidButtonId] = useState(0);
-  // useEffect(() => {
-  //   const productDeleted = deletedItem.includes(product);
-  //   setBtnClicked(productDeleted);
-  // }, [deletedItem, bidButtonId]);
-  // console.log(deletedItemId);
   return (
     <>
       <tr className="sora">
@@ -38,15 +28,14 @@ const ProductRow = ({
               buttonToast();
               handelFavoriteItems(product);
               setBidAmount(bidAmount + product.currentBidPrice);
-              // setBidButtonId(product.id);
-              setBtnClicked(true);
+              product.isTrue = true;
             }}
-            disabled={btnClicked}
+            disabled={product.isTrue}
             style={{
-              cursor: btnClicked ? "not-allowed" : "pointer",
+              cursor: product.isTrue ? "not-allowed" : "pointer",
             }}
           >
-            {btnClicked ? (
+            {product.isTrue ? (
               <FaHeart className="text-red-500 text-2xl" />
             ) : (
               <FaRegHeart className="text-2xl" />

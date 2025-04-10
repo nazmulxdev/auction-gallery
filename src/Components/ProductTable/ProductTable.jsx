@@ -13,14 +13,10 @@ const ProductTable = ({
   const handelBidAmount = (itemAmount) => {
     setBidAmount(bidAmount - itemAmount);
   };
-
   const [deletedItem, setDeletedItem] = useState([]);
   const handelHeartButton = (itemDeleted) => {
     setDeletedItem([...deletedItem, itemDeleted]);
   };
-  // console.log(deletedItem);
-
-  // const deletedItemId = deletedItem.map((item) => item.id);
   return (
     <div className="grid grid-cols-3 gap-6 items-start">
       <div className="col-span-2 bg-white rounded-2xl">
@@ -42,7 +38,6 @@ const ProductTable = ({
                 handelFavoriteItems={handelFavoriteItems}
                 setBidAmount={setBidAmount}
                 bidAmount={bidAmount}
-                // deletedItemId={deletedItemId}
                 deletedItem={deletedItem}
               ></ProductRow>
             ))}

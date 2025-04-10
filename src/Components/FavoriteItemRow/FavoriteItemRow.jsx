@@ -25,6 +25,7 @@ const FavoriteItemRow = ({
               handelFavoriteList(id);
               setClickedCrossButton(true);
               handelBidAmount(currentBidPrice);
+              favItem.isTrue = false;
               handelHeartButton({ id, clickedCrossButton });
             }}
             className="cursor-pointer hover:text-red-500"
