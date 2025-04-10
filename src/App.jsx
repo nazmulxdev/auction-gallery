@@ -27,7 +27,7 @@ function App() {
     setFavoriteItem([...favoriteItem, item]);
   };
   const buttonToast = () => {
-    toast("🦄 Item Added to your Favorite Lists", {
+    toast.success("🦄 Item Added to your Favorite Lists", {
       position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,
